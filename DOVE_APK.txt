@@ -1,0 +1,119 @@
+================================================================================
+  📦 DOVE SI TROVA L'APK?
+================================================================================
+
+⚠️  L'APK NON ESISTE ANCORA - DEVI COMPILARLO PRIMA!
+
+Dopo la compilazione, si trova in:
+  bin/hackerreporter-2.0-arm64-v8a-debug.apk
+  bin/hackerreporter-2.0-armeabi-v7a-debug.apk
+
+
+================================================================================
+  🚀 COME CREARE L'APK (SU LINUX)
+================================================================================
+
+# Setup completo (copia tutto):
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y python3-pip build-essential git openjdk-11-jdk unzip wget curl zlib1g-dev libffi-dev
+pip3 install --upgrade pip Cython==0.29.36 buildozer
+export PATH=$PATH:~/.local/bin
+
+# Clona e build
+cd ~
+git clone https://github.com/Adil-fayyaz/dead-everything.git
+cd dead-everything
+buildozer init
+buildozer -v android debug
+
+# ⚠️  Questo richiede 30-60 minuti la prima volta!
+
+# APK sarà in:
+ls -lh bin/*.apk
+
+
+================================================================================
+  📍 DOVE SI TROVA DOPO IL BUILD
+================================================================================
+
+Cartella: bin/
+
+File:
+  bin/hackerreporter-2.0-arm64-v8a-debug.apk   (telefoni moderni)
+  bin/hackerreporter-2.0-armeabi-v7a-debug.apk (telefoni vecchi)
+
+Dimensione: ~50-100 MB per architettura
+
+
+================================================================================
+  📤 COME INVIARE L'APK
+================================================================================
+
+# Copia in Downloads:
+cp bin/hackerreporter-2.0-arm64-v8a-debug.apk ~/Downloads/
+
+# Poi invia via:
+  ✅ WhatsApp/Telegram (come file)
+  ✅ Email (se < 25MB)
+  ✅ Google Drive/Dropbox (condividi link)
+  ✅ USB (trasferisci fisicamente)
+
+
+================================================================================
+  ⚠️  IMPORTANTE
+================================================================================
+
+1. Serve Linux (Ubuntu/Debian) o WSL su Windows
+2. Serve 8GB+ RAM
+3. Serve 20GB+ spazio libero
+4. Prima build: 30-60 minuti
+5. Download: 5-10 GB (Android SDK/NDK)
+
+
+================================================================================
+  🪟 WINDOWS - USA WSL
+================================================================================
+
+# Installa WSL:
+wsl --install
+# Riavvia computer
+
+# Poi apri Ubuntu in WSL
+# Esegui i comandi del setup Linux
+
+
+================================================================================
+  📋 QUICK REFERENCE
+================================================================================
+
+Build:        buildozer -v android debug
+Location:     bin/*.apk
+Copy:         cp bin/*.apk ~/Downloads/
+Size:         ~50-100 MB
+Time:         30-60 min (prima volta)
+
+
+================================================================================
+  ✅ CHECKLIST
+================================================================================
+
+[ ] Linux o WSL installato
+[ ] Buildozer installato (buildozer --version)
+[ ] Java JDK installato (java --version)
+[ ] Repository clonato
+[ ] In directory dead-everything
+[ ] Eseguito: buildozer -v android debug
+[ ] APK in bin/
+
+
+================================================================================
+  📖 PER MAGGIORI DETTAGLI
+================================================================================
+
+Leggi: COME_CREARE_APK.md
+
+================================================================================
+
+Created by Infinity X White devels team 🚀
+
+================================================================================
