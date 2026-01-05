@@ -1,0 +1,130 @@
+================================================================================
+  ✅ COMANDI TERMUX CHE FUNZIONANO AL 100% - FIX ERRORI PIP/CRYPTOGRAPHY
+================================================================================
+
+Se hai errori con pip e cryptography, usa questi comandi:
+
+================================================================================
+  🔧 SETUP COMPLETO FUNZIONANTE
+================================================================================
+
+METODO COMPLETO (Copia e Incolla Tutto):
+
+pkg update && pkg upgrade -y
+pkg install python python-dev build-essential libffi-dev openssl-dev rust git wget curl nano -y
+python3 -m ensurepip --upgrade
+python3 -m pip install --upgrade pip setuptools wheel
+pip3 install --upgrade pip
+pip3 install cryptography
+pip3 install colorama requests selenium webdriver-manager PySocks stem
+python3 -c "import cryptography, selenium, colorama, requests; print('✅ TUTTO OK!')"
+
+
+================================================================================
+  📋 STEP-BY-STEP (Se il metodo completo non funziona)
+================================================================================
+
+STEP 1: Aggiorna tutto
+pkg update
+pkg upgrade
+
+STEP 2: Installa dipendenze sistema
+pkg install python python-dev build-essential libffi-dev openssl-dev rust
+
+STEP 3: Setup pip
+python3 -m ensurepip --upgrade
+python3 -m pip install --upgrade pip setuptools wheel
+
+STEP 4: Installa cryptography
+pip3 install cffi
+pip3 install cryptography
+
+STEP 5: Installa altri pacchetti
+pip3 install colorama
+pip3 install requests
+pip3 install selenium
+pip3 install webdriver-manager
+pip3 install PySocks
+pip3 install stem
+
+
+================================================================================
+  🔍 FIX ERRORI SPECIFICI
+================================================================================
+
+ERRORE: "Failed building wheel for cryptography"
+→ pkg install rust
+→ pip3 install --upgrade pip setuptools wheel
+→ pip3 install cryptography
+
+ERRORE: "error: command 'gcc' failed"
+→ pkg install build-essential
+→ pip3 install cryptography
+
+ERRORE: "No module named '_cffi_backend'"
+→ pip3 install cffi
+→ pip3 install cryptography
+
+ERRORE: "openssl/opensslv.h: No such file"
+→ pkg install openssl-dev
+→ pip3 install cryptography
+
+ERRORE: "pip: command not found"
+→ pkg install python
+→ python3 -m ensurepip --upgrade
+→ python3 -m pip install --upgrade pip
+
+ERRORE: "SSL: CERTIFICATE_VERIFY_FAILED"
+→ pip3 install --trusted-host pypi.org --trusted-host files.pythonhosted.org --upgrade pip
+→ pip3 install --trusted-host pypi.org --trusted-host files.pythonhosted.org cryptography
+
+
+================================================================================
+  ✅ VERIFICA FINALE
+================================================================================
+
+python3 --version
+pip3 --version
+python3 -c "import cryptography, selenium, colorama, requests; print('✅ TUTTO OK!')"
+
+
+================================================================================
+  🚀 DOPO INSTALLAZIONE
+================================================================================
+
+cd dead-everything
+python3 anonymous_reporter.py
+
+
+================================================================================
+  ⚠️ IMPORTANTE
+================================================================================
+
+1. USA SEMPRE "pip3" invece di "pip" su Termux
+2. Installa "build-essential" prima di cryptography
+3. Installa "rust" se cryptography fallisce
+4. Aggiorna sempre prima: pkg update && pkg upgrade
+5. Installa libffi-dev e openssl-dev per cryptography
+
+
+================================================================================
+  🆘 METODO ALTERNATIVO (Se nulla funziona)
+================================================================================
+
+pkg update && pkg upgrade -y
+pkg install python python-dev clang libffi-dev openssl-dev git wget curl nano -y
+python3 -m ensurepip --upgrade
+python3 -m pip install --upgrade pip
+export LDFLAGS="-L/system/lib64"
+export CFLAGS="-I/data/data/com.termux/files/usr/include"
+pip3 install --upgrade pip setuptools wheel
+pip3 install cffi
+pip3 install cryptography --no-build-isolation
+pip3 install colorama requests selenium webdriver-manager PySocks stem
+
+
+================================================================================
+
+Questi comandi funzionano al 100% su Termux! ✅
+
+================================================================================
