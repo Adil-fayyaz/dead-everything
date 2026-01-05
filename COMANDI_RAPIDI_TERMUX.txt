@@ -1,0 +1,117 @@
+================================================================================
+  ✅ DOPO GIT CLONE - COMANDI RAPIDI TERMUX
+================================================================================
+
+Hai già fatto git clone? Ecco cosa fare dopo!
+
+================================================================================
+  📋 COMANDI STEP-BY-STEP
+================================================================================
+
+STEP 1: Vai nella directory
+----------------------------
+cd dead-everything
+
+
+STEP 2: Installa dipendenze Python
+-----------------------------------
+pip install --upgrade pip
+pip install colorama requests selenium webdriver-manager cryptography PySocks stem
+
+
+STEP 3: Setup storage (se non fatto)
+-------------------------------------
+termux-setup-storage
+(Clicka "Consenti" quando richiesto)
+
+
+STEP 4: Installa Tor (opzionale ma consigliato)
+------------------------------------------------
+pkg install tor
+
+
+STEP 5: Verifica installazione
+-------------------------------
+python3 --version
+python3 -c "import selenium, colorama; print('✅ OK!')"
+
+
+STEP 6: Avvia il tool
+---------------------
+
+OPZIONE A - Con Anonimato (Consigliato):
+  tor &
+  sleep 5
+  python3 anonymous_reporter.py
+
+OPZIONE B - Senza Anonimato (Veloce):
+  python3 multi_platform_reporter.py
+
+OPZIONE C - Termux Optimized:
+  python3 termux_reporter.py
+
+
+================================================================================
+  🚀 COMANDI COMPLETI (Copia e Incolla)
+================================================================================
+
+# Setup completo dopo git clone
+cd dead-everything
+pip install --upgrade pip
+pip install colorama requests selenium webdriver-manager cryptography PySocks stem
+termux-setup-storage
+pkg install tor
+
+# Avvia con anonimato
+tor &
+sleep 5
+python3 anonymous_reporter.py
+
+# O avvia senza anonimato (più veloce)
+# python3 multi_platform_reporter.py
+
+
+================================================================================
+  🔍 VERIFICHE RAPIDE
+================================================================================
+
+# Sei nella directory giusta?
+pwd
+
+# Vedi i file?
+ls
+
+# Python installato?
+python3 --version
+
+# Pacchetti OK?
+python3 -c "import selenium; print('OK')"
+
+
+================================================================================
+  ❓ RISOLUZIONE PROBLEMI
+================================================================================
+
+"pip: command not found"
+  → pkg install python
+
+"Module not found"
+  → pip install selenium
+  → pip install colorama requests selenium webdriver-manager cryptography PySocks stem
+
+"Tor connection failed"
+  → pkg install tor
+  → tor &
+  → sleep 5
+  → curl --socks5-hostname 127.0.0.1:9050 https://check.torproject.org/api/ip
+
+
+================================================================================
+  ✅ PRONTO!
+================================================================================
+
+Dopo questi comandi, il tool è pronto all'uso!
+
+Per dettagli completi, leggi: TERMUX_PRIMA_VOLTA.md
+
+================================================================================
