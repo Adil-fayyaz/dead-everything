@@ -1,0 +1,92 @@
+{
+    "instagram": {
+        "default_delay": 30,
+        "min_delay": 10,
+        "max_reports_per_session": 10,
+        "headless": false,
+        "timeout": 15
+    },
+    "tiktok": {
+        "default_delay": 45,
+        "min_delay": 15,
+        "max_reports_per_session": 10,
+        "headless": false,
+        "timeout": 15
+    },
+    "twitter": {
+        "default_delay": 35,
+        "min_delay": 15,
+        "max_reports_per_session": 8,
+        "headless": false,
+        "timeout": 15
+    },
+    "facebook": {
+        "default_delay": 40,
+        "min_delay": 15,
+        "max_reports_per_session": 8,
+        "headless": false,
+        "timeout": 15
+    },
+    "youtube": {
+        "default_delay": 50,
+        "min_delay": 20,
+        "max_reports_per_session": 5,
+        "headless": false,
+        "timeout": 20
+    },
+    "reddit": {
+        "default_delay": 35,
+        "min_delay": 15,
+        "max_reports_per_session": 10,
+        "headless": false,
+        "timeout": 15
+    },
+    "linkedin": {
+        "default_delay": 60,
+        "min_delay": 30,
+        "max_reports_per_session": 5,
+        "headless": false,
+        "timeout": 20
+    },
+    "advanced": {
+        "use_proxy": false,
+        "proxy_list": [],
+        "user_agents": [
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:120.0) Gecko/20100101 Firefox/120.0",
+            "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Safari/605.1.15"
+        ],
+        "save_session": true,
+        "session_dir": "sessions",
+        "screenshots_on_error": true,
+        "screenshots_dir": "screenshots_errors",
+        "enable_multi_platform": true,
+        "parallel_execution": false
+    },
+    "anonymity": {
+        "enable_tor": false,
+        "tor_port": 9050,
+        "enable_proxy_rotation": false,
+        "proxy_list": [],
+        "proxy_validation": true,
+        "proxy_rotation_interval": 3,
+        "enable_fingerprint_randomization": true,
+        "enable_webrtc_leak_protection": true,
+        "enable_dns_leak_protection": true,
+        "enable_canvas_fingerprinting_protection": true,
+        "encrypt_credentials": false,
+        "master_password_required": false,
+        "clear_cookies_on_exit": true,
+        "clear_cache_on_exit": true,
+        "use_private_mode": true,
+        "disable_webgl": false,
+        "randomize_screen_resolution": true,
+        "randomize_timezone": true,
+        "randomize_language": true,
+        "enable_ip_leak_check": true,
+        "enable_dns_leak_check": true,
+        "anonymity_level": "high"
+    }
+}

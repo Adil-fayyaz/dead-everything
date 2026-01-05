@@ -1,0 +1,25 @@
+# Proxy List Example
+# Add your proxies here, one per line
+# Supported formats:
+#   - http://proxy.com:8080
+#   - https://proxy.com:443
+#   - socks5://proxy.com:1080
+#   - http://username:password@proxy.com:8080
+
+# Example proxies (replace with real ones):
+# http://proxy1.example.com:8080
+# socks5://proxy2.example.com:1080
+# http://user:pass@proxy3.example.com:3128
+
+# Free proxy lists (use with caution):
+# - https://www.proxy-list.download/
+# - https://free-proxy-list.net/
+# - https://www.sslproxies.org/
+
+# Paid proxy services (recommended):
+# - Bright Data (luminati.io)
+# - Smartproxy (smartproxy.com)
+# - Oxylabs (oxylabs.io)
+# - IPRoyal (iproyal.com)
+
+# Rename this file to "proxies.txt" and add your proxies
