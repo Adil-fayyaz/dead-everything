@@ -1,0 +1,105 @@
+================================================================================
+  📱 APK PER WHATSAPP - DESTINAZIONE E CONDIVISIONE
+================================================================================
+
+🎯 DESTINAZIONE APK:
+
+Da GitHub Actions:
+  → https://github.com/Adil-fayyaz/dead-everything/actions
+  → Artifacts → hackerreporter-apk → Download ZIP
+  → Estrai → APK dentro!
+
+Da Build Locale:
+  → bin/hackerreporter-2.0-arm64-v8a-debug.apk
+
+================================================================================
+  📤 COME CONDIVIDERE SU WHATSAPP
+================================================================================
+
+METODO 1: Da Telefono (Più Veloce)
+-----------------------------------
+1. Trasferisci APK sul telefono (Drive/Email/USB)
+2. Apri File Manager → Download
+3. Tap lungo sull'APK
+4. Condividi → WhatsApp
+5. Seleziona contatto/gruppo
+6. Invia ✅
+
+METODO 2: Da PC
+---------------
+1. Invia APK via email/Drive al telefono
+2. Scarica APK sul telefono
+3. Apri WhatsApp → Contatto
+4. Click 📎 → Documento → Seleziona APK
+5. Invia ✅
+
+METODO 3: Link Google Drive
+---------------------------
+1. Upload APK su Google Drive
+2. Ottieni link condivisibile
+3. Condividi link su WhatsApp
+4. Destinatario scarica da Drive
+
+================================================================================
+  📍 PERCORSI APK
+================================================================================
+
+GitHub Actions (dopo download):
+  C:\Users\TuoNome\Downloads\hackerreporter-apk\hackerreporter-2.0-arm64-v8a-debug.apk
+
+Build Locale (Linux/WSL):
+  ~/dead-everything/bin/hackerreporter-2.0-arm64-v8a-debug.apk
+
+Telefono Android:
+  /storage/emulated/0/Download/hackerreporter-2.0-arm64-v8a-debug.apk
+
+================================================================================
+  🚀 METODO PIÙ VELOCE
+================================================================================
+
+1. GitHub Actions → Download APK
+2. Google Drive → Upload APK
+3. Telefono → Download da Drive
+4. File Manager → Tap lungo APK → Condividi → WhatsApp
+5. Invia ✅
+
+Tempo: 5-10 minuti (dopo che APK è pronto)
+
+================================================================================
+  ⚠️  IMPORTANTE
+================================================================================
+
+- Dimensione APK: ~50-100 MB (WhatsApp permette fino a 100MB)
+- Formato: Deve essere .apk (non .zip - estrai prima!)
+- Permessi: Destinatario deve abilitare "Installa da fonti sconosciute"
+
+================================================================================
+  ✅ CHECKLIST
+================================================================================
+
+[ ] APK compilato e scaricato
+[ ] APK trasferito sul telefono
+[ ] APK in cartella Download
+[ ] WhatsApp aperto
+[ ] Contatto/gruppo selezionato
+[ ] APK condiviso ✅
+
+================================================================================
+  📋 RIEPILOGO
+================================================================================
+
+DESTINAZIONE:
+  GitHub: Artifacts → Download → Estrai ZIP
+  Locale: bin/hackerreporter-2.0-arm64-v8a-debug.apk
+
+WHATSAPP:
+  1. Trasferisci APK sul telefono
+  2. File Manager → Download → APK
+  3. Tap lungo → Condividi → WhatsApp
+  4. Invia ✅
+
+================================================================================
+
+Created by Infinity X White devels team 🚀
+
+================================================================================
