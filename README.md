@@ -7,6 +7,8 @@
 
 **Advanced Multi-Platform Social Media Reporter** - A powerful tool for automating user reports across **7 major social media platforms** with complete anonymity support.
 
+> 👨‍💻 **Created by [Infinity X White devels team](https://github.com/Adil-fayyaz)** 👨‍💻
+
 > ⚠️ **CRITICAL LEGAL WARNING** ⚠️
 > 
 > This tool is for **EDUCATIONAL and RESEARCH purposes ONLY**. Using this tool violates Terms of Service of all platforms. Your accounts can be **PERMANENTLY BANNED**. Use at your own risk.
@@ -574,11 +576,16 @@ This project is licensed under the GPL License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Credits
 
-- **Author**: @the_silent_hacker_raj
+- **Created by**: [Infinity X White devels team](https://github.com/Adil-fayyaz)
+- **Original Author**: @the_silent_hacker_raj
 - **YouTube Channel**: Hacker Colony Official
 - **Platforms**: All 7 platforms fully supported
 - **Anonymity**: Tor, Proxy, Fingerprint support
 - **Mobile**: Termux/Android support
+
+---
+
+> 👨‍💻 **Developed by Infinity X White devels team** 👨‍💻
 
 ---
 
