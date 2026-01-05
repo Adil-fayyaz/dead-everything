@@ -1,0 +1,19 @@
+# Requirements for Kivy App
+# For desktop and development
+
+# Core dependencies
+colorama>=0.4.6
+requests>=2.31.0
+selenium>=4.15.0
+webdriver-manager>=4.0.1
+cryptography>=41.0.0
+PySocks>=1.7.1
+stem>=1.8.2
+
+# Kivy dependencies
+kivy>=2.2.0
+kivymd>=1.1.1
+pillow>=10.0.0
+
+# Additional for app
+python-dotenv>=1.0.0
