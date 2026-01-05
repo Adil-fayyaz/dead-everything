@@ -1,0 +1,232 @@
+================================================================================
+  🔥 HACKER REPORTER APP - QUICK START 🔥
+================================================================================
+
+INTERFACCIA GRAFICA HACKER-STYLE
+Funziona su: Kali Linux | Termux | Android APK
+
+================================================================================
+  🖥️  KALI LINUX / UBUNTU
+================================================================================
+
+# Installazione completa (copia tutto):
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y python3 python3-pip git chromium-browser build-essential libsdl2-dev
+pip3 install --upgrade pip
+pip3 install kivy kivymd colorama requests selenium webdriver-manager cryptography PySocks stem pillow
+git clone https://github.com/Adil-fayyaz/dead-everything.git
+cd dead-everything
+python3 app_main.py
+
+
+================================================================================
+  📱 TERMUX (ANDROID)
+================================================================================
+
+# Installazione completa (copia tutto):
+pkg update && pkg upgrade -y
+pkg install -y python git build-essential libffi-dev openssl-dev mesa zlib libjpeg-turbo libpng sdl2 sdl2-image sdl2-mixer sdl2-ttf
+pip install --upgrade pip
+pip install Cython==0.29.36
+pip install kivy kivymd colorama requests selenium webdriver-manager cryptography PySocks stem pillow
+git clone https://github.com/Adil-fayyaz/dead-everything.git
+cd dead-everything
+python app_main.py
+
+
+================================================================================
+  📦 BUILD ANDROID APK
+================================================================================
+
+# Su Linux (Ubuntu/Debian):
+sudo apt update
+sudo apt install -y python3-pip build-essential git openjdk-11-jdk
+pip3 install --upgrade buildozer Cython==0.29.36
+cd ~/dead-everything
+buildozer -v android debug
+
+# APK sarà in: bin/hackerreporter-2.0-arm64-v8a-debug.apk
+
+
+================================================================================
+  🎯 COMANDI RAPIDI
+================================================================================
+
+# Avvia app su Kali/Linux:
+cd dead-everything
+python3 app_main.py
+
+# Avvia app su Termux:
+cd dead-everything
+python app_main.py
+
+# Build APK:
+cd dead-everything
+buildozer android debug
+
+
+================================================================================
+  ✨ FEATURES DELL'APP
+================================================================================
+
+✅ Interfaccia hacker-style (verde su nero)
+✅ 7 piattaforme supportate
+✅ Selezione multipla piattaforme
+✅ Input credenziali sicuro
+✅ Configurazione anonimato
+✅ Progress bar in tempo reale
+✅ Log live degli attacchi
+✅ Statistiche dettagliate
+✅ Tema dark completo
+✅ Ottimizzata per mobile
+
+
+================================================================================
+  📱 SCHERMATE DELL'APP
+================================================================================
+
+1. SPLASH SCREEN
+   - Banner hacker-style
+   - Loading animation
+   - Credits
+
+2. MAIN MENU
+   - 🎯 Start Attack
+   - ⚙️  Settings
+   - 🛡️  Anonymity Config
+   - 📊 Statistics
+   - ℹ️  About
+   - ❌ Exit
+
+3. PLATFORM SELECT
+   - Checkbox per ogni piattaforma
+   - Instagram, TikTok, Twitter, Facebook, YouTube, Reddit, LinkedIn
+   - Opzione "All Platforms"
+
+4. CREDENTIALS
+   - Username/Email input
+   - Password input (nascosta)
+   - Target username
+   - Country selection
+   - Report reason
+
+5. ATTACK SCREEN
+   - Progress bar
+   - Live logging
+   - Success/Failed counter
+   - Stop button
+
+6. SETTINGS
+   - Configurazioni varie
+
+7. ANONYMITY
+   - Livelli anonimato
+   - Tor config
+   - Proxy config
+
+8. STATISTICS
+   - Total attacks
+   - Success rate
+   - Platforms used
+
+9. ABOUT
+   - Info app
+   - Credits
+   - Version
+
+
+================================================================================
+  🔧 TROUBLESHOOTING
+================================================================================
+
+ERRORE: "Kivy not found"
+→ pip3 install kivy
+
+ERRORE: "SDL2 not found" (Termux)
+→ pkg install sdl2 sdl2-image sdl2-mixer sdl2-ttf
+
+ERRORE: "Buildozer not found"
+→ pip3 install buildozer
+→ export PATH=$PATH:~/.local/bin
+
+ERRORE: "Java not found"
+→ sudo apt install openjdk-11-jdk
+
+APP CRASHES su Android
+→ Controlla permessi (Internet, Storage)
+→ Verifica Android 5.0+ (API 21+)
+→ Controlla logs: adb logcat | grep python
+
+
+================================================================================
+  📝 NOTE IMPORTANTI
+================================================================================
+
+1. Prima build APK richiede 30-60 minuti
+2. Serve 20GB+ spazio per build
+3. Usa WiFi per download SDK/NDK
+4. Selenium su Android richiede ChromeDriver
+5. Sempre usare account di test!
+
+
+================================================================================
+  🎨 TEMA HACKER
+================================================================================
+
+Colori:
+- Background: Nero (#000000)
+- Testo: Verde brillante (#00ff00)
+- Buttons: Verde scuro (#004d00)
+- Accenti: Rosso per errori, Giallo per warning
+
+Font:
+- Monospace (RobotoMono)
+- ASCII art banner
+- Emoji per icone
+
+
+================================================================================
+  ✅ CHECKLIST PRIMA DI AVVIARE
+================================================================================
+
+Desktop (Kali/Linux):
+[ ] Python 3.7+ installato
+[ ] Kivy installato
+[ ] Chromium installato
+[ ] Repository clonato
+[ ] Nella directory corretta
+
+Termux:
+[ ] Termux aggiornato
+[ ] Python installato
+[ ] Kivy installato
+[ ] SDL2 installato
+[ ] Repository clonato
+
+Build APK:
+[ ] Linux o WSL
+[ ] 8GB+ RAM
+[ ] 20GB+ spazio libero
+[ ] Buildozer installato
+[ ] Java JDK installato
+
+
+================================================================================
+  🚀 PRONTO!
+================================================================================
+
+Ora hai un'app con interfaccia grafica hacker-style che funziona su:
+✅ Kali Linux
+✅ Ubuntu/Debian
+✅ Termux (Android)
+✅ Android APK (installabile)
+
+Avvia con: python3 app_main.py
+
+Buon hacking! 🔥👻
+
+================================================================================
+
+Created by Infinity X White devels team 🚀
+
+================================================================================

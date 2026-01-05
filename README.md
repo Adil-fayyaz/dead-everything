@@ -55,7 +55,9 @@
 
 ### 📱 Platform Support
 - **Desktop** - Windows, Linux, macOS
-- **Mobile** - Android via Termux (NEW!)
+- **Mobile** - Android via Termux
+- **GUI App** - Kivy-based hacker-style interface (NEW!)
+- **Android APK** - Installable app for Android (NEW!)
 
 ---
 
@@ -112,7 +114,31 @@ python3 anonymous_reporter.py
 
 ## 📖 Usage
 
-### Option 1: Anonymous Reporter (Recommended)
+### Option 1: GUI App - Hacker Interface (NEW! 🔥)
+
+```bash
+python3 app_main.py
+```
+
+**Features:**
+- 🎨 Hacker-style dark interface (green on black)
+- 📱 Works on Kali Linux, Termux, Android APK
+- 🎯 Visual platform selection
+- 📊 Real-time progress tracking
+- 📝 Live attack logging
+- 📈 Statistics dashboard
+- 🛡️ Built-in anonymity config
+
+**Build Android APK:**
+```bash
+buildozer android debug
+```
+
+See `APP_INSTALLATION.md` for complete guide.
+
+---
+
+### Option 2: Anonymous Reporter (Recommended)
 
 ```bash
 python3 anonymous_reporter.py
@@ -125,7 +151,7 @@ python3 anonymous_reporter.py
 - 5 anonymity levels
 - Real-time anonymity score
 
-### Option 2: Multi-Platform Reporter
+### Option 3: Multi-Platform Reporter
 
 ```bash
 python3 multi_platform_reporter.py
@@ -137,7 +163,7 @@ python3 multi_platform_reporter.py
 - Detailed statistics
 - Platform-specific optimization
 
-### Option 3: Advanced Reporter (Instagram + TikTok)
+### Option 4: Advanced Reporter (Instagram + TikTok)
 
 ```bash
 python3 advanced_reporter.py
@@ -148,7 +174,7 @@ python3 advanced_reporter.py
 - Session management
 - Anti-detection measures
 
-### Option 4: Original (Instagram Only)
+### Option 5: Original (Instagram Only)
 
 ```bash
 python3 insta-report.py
