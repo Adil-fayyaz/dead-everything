@@ -1,0 +1,82 @@
+================================================================================
+  📦 SCARICA APK ANDROID - LINK DIRETTO
+================================================================================
+
+🚀 L'APK viene compilato automaticamente su GitHub Actions!
+
+================================================================================
+  📍 DOVE SCARICARE L'APK
+================================================================================
+
+LINK DIRETTO GITHUB ACTIONS:
+https://github.com/Adil-fayyaz/dead-everything/actions
+
+WORKFLOW BUILD:
+https://github.com/Adil-fayyaz/dead-everything/actions/workflows/build-apk.yml
+
+================================================================================
+  🎯 COME SCARICARE (3 STEP)
+================================================================================
+
+STEP 1: Vai su GitHub Actions
+  → https://github.com/Adil-fayyaz/dead-everything/actions
+
+STEP 2: Aspetta Build Completato
+  → Cerca workflow "Build Android APK"
+  → Aspetta che diventi VERDE ✅ (30-60 minuti)
+
+STEP 3: Download APK
+  → Click sul workflow completato
+  → Scroll in basso → "Artifacts"
+  → Click "hackerreporter-apk"
+  → Download ZIP
+  → Estrai → APK dentro!
+
+================================================================================
+  📱 INSTALLAZIONE SU ANDROID
+================================================================================
+
+1. Trasferisci APK sul telefono (Email/WhatsApp/Drive/USB)
+2. Apri File Manager
+3. Tap sull'APK
+4. Abilita "Installa da fonti sconosciute"
+5. Click "Installa"
+6. Click "Apri"
+
+================================================================================
+  ⚠️  IMPORTANTE
+================================================================================
+
+- Prima build: 30-60 minuti
+- Serve che il workflow sia completato (verde ✅)
+- APK sarà in Artifacts dopo il build
+- Android minimo: 5.0 (API 21)
+
+================================================================================
+  🔧 SE NON FUNZIONA
+================================================================================
+
+1. Verifica workflow completato (verde ✅)
+2. Controlla errori nel workflow
+3. Riprova a triggerare: "Run workflow"
+4. Oppure build locale: ./build_apk.sh
+
+================================================================================
+  📋 FILE APK
+================================================================================
+
+Dopo download, avrai:
+  hackerreporter-2.0-arm64-v8a-debug.apk    (telefoni moderni)
+  hackerreporter-2.0-armeabi-v7a-debug.apk (telefoni vecchi)
+
+Usa arm64-v8a per la maggior parte dei telefoni!
+
+================================================================================
+
+LINK: https://github.com/Adil-fayyaz/dead-everything/actions
+
+================================================================================
+
+Created by Infinity X White devels team 🚀
+
+================================================================================
