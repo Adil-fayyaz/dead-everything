@@ -1,0 +1,85 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        
+    - name: Install system dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y \
+          build-essential \
+          git \
+          unzip \
+          wget \
+          curl \
+          openjdk-11-jdk \
+          zlib1g-dev \
+          libncurses5-dev \
+          libncursesw5-dev \
+          libreadline-dev \
+          libsqlite3-dev \
+          libgdbm-dev \
+          libdb5.3-dev \
+          libbz2-dev \
+          libexpat1-dev \
+          liblzma-dev \
+          libffi-dev \
+          uuid-dev \
+          libssl-dev
+          
+    - name: Install Cython
+      run: |
+        pip install --upgrade pip
+        pip install Cython==0.29.36
+        
+    - name: Install Buildozer
+      run: |
+        pip install buildozer
+        
+    - name: Setup Buildozer
+      run: |
+        buildozer init || true
+        
+    - name: Build APK
+      run: |
+        buildozer -v android debug
+      timeout-minutes: 120
+      
+    - name: List APK files
+      run: |
+        ls -lh bin/*.apk || echo "No APK files found"
+        
+    - name: Upload APK artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: hackerreporter-apk
+        path: bin/*.apk
+        retention-days: 30
+      if: success()
+      
+    - name: Upload build logs
+      uses: actions/upload-artifact@v3
+      with:
+        name: build-logs
+        path: |
+          .buildozer/
+          *.log
+        retention-days: 7
+      if: failure()
